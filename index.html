@@ -12,7 +12,7 @@
       <span>{{prim()}}</span>
       <p V-html="pogy"></p>
       <p V-for="(man, index) in many">{{index}} => {{man.first}} | {{man.third}}</p>
-      <p V-if="age > 35">{{name}}</p><!--If Condition  Not True remove Element Form DOM-->
+      <p V-if="age > 37">{{name}}</p><!--If Condition  Not True remove Element Form DOM-->
       <p V-else-if="age < 36 && age > 8">Ye Ye Ye</p>
       <p v-else="age < 8">No NO No</p>
       <p v-show="age >40">Show</p><!--Show Element In DOM Even Codition Is Not true But Display None-->
@@ -33,7 +33,7 @@
         el: '#azure',
         data: {
           name: 'Ahmed',
-          age: 36,
+          age: 37,
           source: "Change Double",
           skills: ['html', 'css', 'js'],
           many: [
